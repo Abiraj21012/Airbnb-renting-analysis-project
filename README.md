@@ -142,3 +142,5 @@ These insights can help investors narrow down potential locations and property t
 ⭐ **If you find this project interesting, feel free to explore the interactive dashboard!**
 
 *This project was developed for educational and portfolio purposes. The analysis provides exploratory insights and does not constitute financial, legal, or investment advice.*
+
+<img width="1918" height="1015" alt="image" src="https://github.com/user-attachments/assets/af453b30-e58f-490f-bb52-3cea4d9354a9" />
