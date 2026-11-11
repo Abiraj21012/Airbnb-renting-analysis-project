@@ -1,111 +1,144 @@
-**Airbnb Rental Investment Analysis**
+# 🏡 Airbnb Rental Investment Analysis | Tableau Dashboard
 
-An interactive Tableau dashboard exploring Airbnb listing data to help prospective property investors compare locations, understand pricing patterns, and evaluate bedroom-level competition in the United States.
+An interactive Tableau dashboard analyzing Airbnb listings across the United States to explore potential rental investment opportunities through pricing trends, geographical insights, seasonal patterns, property characteristics, and market competition.
 
-Live dashboard: View the Tableau Public dashboard
+🔗 **Live Dashboard:** [Explore the Interactive Tableau Dashboard](https://public.tableau.com/app/profile/abiraj.rajeshwaran/viz/AirbnbRentinganalysisProject/Dashboard1?publish=yes)
 
-**Project Overview**
+---
 
-Imagine having money to invest in a property in the United States and wanting to rent it out on Airbnb. The key questions are:
-- Which ZIP codes have higher average Airbnb listing prices?
-- Which areas could be worth investigating as potential investment locations?
-- How do prices and demand patterns change throughout the year?
-- How does the number of bedrooms relate to listing prices?
-- How competitive is each bedroom category?
-This project uses Airbnb listing data and Tableau visualisations to explore these questions. It is intended as an exploratory analysis tool to support further investment research—not as a guarantee of rental income or investment returns.
+## 📌 Project Overview
 
-**Data Source**
+**Business Problem**
 
-- Dataset: Airbnb Listings 2016 Dataset – Kaggle
-- Platform: Kaggle
-- Analysis and visualisation: Tableau
+Imagine you are an investor looking to purchase a property in the United States and generate rental income through Airbnb.
 
-Please refer to the Kaggle dataset page for the original data, its files, and any licensing or usage conditions.
+Before investing, you need to understand:
 
-**Data Preparation**
+- Which ZIP codes offer higher average Airbnb listing prices?
+- Which geographical areas are worth exploring for property investment?
+- How do Airbnb prices and activity change throughout the year?
+- How does the number of bedrooms influence listing prices?
+- How competitive is the market for different property types?
 
-Before building the dashboard, I reviewed the available tables and their fields to understand how the data related to one another.
+The objective of this project is to explore Airbnb listing data and transform it into meaningful visual insights that can support property investment research and data-driven decision-making.
 
-The preparation process included:
+## 📊 Dataset
 
-1. Inspecting the tables and identifying relevant fields.
-2. Reviewing the relationships between tables.
-3. Creating joins in Tableau where required to bring related information together.
-4. Checking the relationship fields and join keys to ensure the tables connected using the appropriate columns.
-5. Reviewing the resulting data before creating the visualisations.
+- **Dataset:** [Airbnb Listings 2016 Dataset](https://www.kaggle.com/datasets/alexanderfreberg/airbnb-listings-2016-dataset)
+- **Source:** Kaggle
+- **Data Domain:** Airbnb Listings and Rental Market Analysis
+- **Visualization Tool:** Tableau
 
-Correct relationships and join keys are important because incorrect joins can lead to duplicated records or misleading aggregated values.
+The dataset contains Airbnb listing information that can be used to investigate pricing, property characteristics, locations, and seasonal patterns.
 
-**Dashboard Walkthrough**
+## ⚙️ Data Preparation & Relationships
 
-The dashboard contains five main visualisations.
+Before developing the dashboard, I performed an initial data inspection to understand the structure of the available tables and identify how the information was connected.
 
-**1. Average Airbnb Price by ZIP Code**
+**Key activities:**
 
-A bar chart comparing the average listing price across ZIP codes.
+1. Inspected the available tables and identified relevant data fields.
+2. Analyzed relationships between tables to understand their connections.
+3. Created appropriate joins in Tableau to combine related datasets.
+4. Identified and corrected relationship fields and join keys to establish accurate table connections.
+5. Reviewed the resulting dataset to ensure the data was suitable for visualization and analysis.
 
-Business question: Which ZIP codes have the highest average Airbnb listing prices?
+**Why this matters:** Establishing correct relationships and join keys is essential to maintaining data accuracy and avoiding duplicated records or misleading aggregations.
 
-This view helps identify areas where hosts list properties at higher average prices. These locations may be worth investigating further, although a higher listing price does not automatically mean higher occupancy or profit.
+## 📈 Dashboard Visualizations & Analysis
 
-**2. Average Price by Location (Map)**
+The dashboard consists of five visualizations, each addressing a different business question.
 
-A map displaying the geographic distribution of Airbnb listing prices by ZIP code.
+### 1. Average Airbnb Price by ZIP Code
 
-Business question: Where are the listings located, and which areas should an investor explore?
+**Visualization:** Bar Chart
 
-The map provides geographic context alongside the average price and ZIP code, making it easier to compare locations and identify areas of interest.
+**Business Question:** Which ZIP codes have the highest average Airbnb listing prices?
 
-**3. Seasonal Pricing and Availability Trends**
+- Compares average Airbnb listing prices across different ZIP codes.
+- Identifies locations where hosts list properties at higher average prices.
+- Helps investors identify geographical areas worth further investigation.
 
-A time-based visualisation exploring how Airbnb activity and pricing patterns vary throughout the year.
+### 2. Average Price by Geographical Location
 
-Business question: When might be a suitable time of year to operate or promote an Airbnb property?
+**Visualization:** Interactive Map
 
-This view helps explore seasonal patterns, including periods around holidays and the winter travel season. Seasonal trends should be interpreted using the fields and time period available in the dataset; they do not independently prove future demand or revenue.
+**Business Question:** Where are the higher-priced Airbnb listings located?
 
-**4. Price by Number of Bedrooms**
+- Displays Airbnb locations geographically using ZIP codes.
+- Presents average listing prices across different areas.
+- Helps investors explore and compare potential property investment locations.
 
-A visualisation comparing listing prices across bedroom counts and property configurations.
+### 3. Seasonal Pricing & Availability Trends
 
-Business question: How does the number of bedrooms relate to the price a host can charge?
+**Visualization:** Time-Based Analysis
 
-This helps compare different property sizes and understand how bedroom count is associated with listing prices.
+**Business Question:** When does Airbnb activity and pricing show seasonal patterns?
 
-**5. Competition by Bedroom Count**
+- Explores how Airbnb pricing and activity vary throughout the year.
+- Identifies seasonal patterns around holidays and travel periods.
+- Helps understand when hosts may experience different rental market conditions.
 
-A visualisation comparing the number of Airbnb listings across bedroom categories.
+### 4. Price Analysis by Number of Bedrooms
 
-Business question: How much competition exists for each type of property?
+**Visualization:** Comparative Chart
 
-This view helps show which bedroom categories have more or fewer competing listings. It can be considered alongside the price analysis when evaluating a potential property type.
+**Business Question:** How does the number of bedrooms influence Airbnb listing prices?
 
-**Tools and Skills**
+- Compares average listing prices across different bedroom categories.
+- Examines the relationship between property size and rental pricing.
+- Helps investors understand pricing differences between property types.
 
-- Tableau: Data relationships, joins, calculated analysis, charts, maps, dashboard development, and interactive data visualisation.
-- Data analysis: Data inspection, field selection, comparing averages, and identifying patterns.
-- Business analysis: Translating an investment question into measurable questions and visual insights.
+### 5. Market Competition by Bedroom Count
 
-**Key Takeaways**
+**Visualization:** Competition Analysis
 
-The dashboard brings together several perspectives that can be considered when researching an Airbnb investment:
-- Location: Compare average listing prices across ZIP codes.
-- Geography: Explore where higher-priced listings are concentrated.
-- Seasonality: Investigate how activity or pricing varies over time.
-- Property type: Compare prices across bedroom counts.
-- Competition: Understand how many listings compete within each bedroom category.
+**Business Question:** How competitive is the Airbnb market for different property types?
 
-A sound investment decision would require additional research, including occupancy rates, actual booked-night revenue, cleaning and management costs, taxes, insurance, maintenance, financing costs, local short-term-rental regulations, and seasonality across multiple years. Average listing prices alone are not enough to calculate rental income or return on investment.
+- Compares the number of Airbnb listings across bedroom categories.
+- Identifies property types with higher or lower listing competition.
+- Helps investors evaluate market competition alongside potential listing prices.
 
-**How to View the Project**
-1. Open the published Tableau dashboard.
-2. Explore the five visualisations.
-3. Compare ZIP codes and locations using the average-price chart and map.
-4. Review seasonal patterns, bedroom-level pricing, and listing competition.
+## 🛠️ Tools & Technologies
 
-**Author**
+| Tool | Purpose |
+|---|---|
+| Tableau | Data visualization and dashboard development |
+| Tableau Data Model | Table relationships and joins |
+| Kaggle | Dataset source |
+| Data Analysis | Identifying trends, patterns, and business insights |
+
+## 💡 Key Business Insights
+
+This project explores five important dimensions of Airbnb rental investment:
+
+- **Location Analysis:** Identify ZIP codes with higher average listing prices.
+- **Geographical Analysis:** Understand the distribution of rental prices across different areas.
+- **Seasonal Analysis:** Explore how rental market activity changes throughout the year.
+- **Property Analysis:** Understand pricing differences based on bedroom count.
+- **Competition Analysis:** Evaluate the number of competing listings across property categories.
+
+These insights can help investors narrow down potential locations and property types for further research.
+
+**Note:** Average listing prices do not represent actual rental income or profitability. A complete investment assessment would also require occupancy rates, booked-night revenue, operating expenses, taxes, insurance, maintenance costs, financing, and local short-term rental regulations.
+
+## 🚀 How to Explore the Dashboard
+
+1. Visit the [Published Tableau Dashboard](https://public.tableau.com/app/profile/abiraj.rajeshwaran/viz/AirbnbRentinganalysisProject/Dashboard1?publish=yes).
+2. Explore the average listing prices across ZIP codes.
+3. Use the geographical map to compare different locations.
+4. Investigate seasonal pricing and availability patterns.
+5. Compare bedroom-level pricing and market competition.
+
+## 👨‍💻 Author
+
 **Rajeshwaran Abiraj**
-- Tableau Public: Airbnb Renting Analysis Dashboard
-- GitHub: Abiraj21
 
-This project was created for learning and portfolio purposes. The analysis is exploratory and should not be treated as financial, legal, or investment advice.
+- **GitHub:** [Abiraj21](https://github.com/Abiraj21)
+- **Tableau Public:** [Airbnb Rental Investment Analysis](https://public.tableau.com/app/profile/abiraj.rajeshwaran/viz/AirbnbRentinganalysisProject/Dashboard1?publish=yes)
+
+---
+
+⭐ **If you find this project interesting, feel free to explore the interactive dashboard!**
+
+*This project was developed for educational and portfolio purposes. The analysis provides exploratory insights and does not constitute financial, legal, or investment advice.*
